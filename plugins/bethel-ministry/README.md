@@ -1,0 +1,75 @@
+# 벧엘교회 사역 스킬 모음 (bethel-ministry)
+
+군선교사 김병국 목사(육군 1사단 58포병대대 벧엘교회)의 사역·집필·강의용 스킬 49개 묶음.
+맥북·맥미니 등 여러 기기에서 동일한 스킬 환경을 쓰기 위해 하나로 묶은 플러그인.
+
+## 설치
+`bethel-ministry.plugin` 파일을 Cowork 대화창에 올리고 설치 버튼을 누른다.
+
+## 구성
+
+**설교 파이프라인** — sermon-lectionary(허브), bible-text-exegesis, sermon-conceptnet,
+sermon-critic, buttrick-homiletic, bmf-sermon-table, writer-voice, edit-writing-room
+
+**예배·목회** — bible-study-worksheet, bible-reading-clip, communion-service,
+daily-lectionary-devotion, military-mission-letter, bilingual-subtitle
+
+**책쓰기** — book-planning, book-planning-novel, book-novel, book-novel-voice,
+book-writing-pro, book-editing, book-research, book-citation
+
+**강의** — lecture-plan, lecture-blueprint, lecture-research, lecture-slides,
+lecture-review, lecture-plan-workflow, lecture-slides-workflow
+
+**글쓰기** — write-content, write-blog, write-brunch, write-facebook
+
+**리서치·위키** — research-topic, research-mega-topic, research-report-workflow,
+wiki-ingest, wiki-activate, wiki-audit, wiki-research
+
+**시각화·기타** — visual-chart, visual-diagram, visual-infographic, visual-table,
+nanobanana-infographic-prompt, hwpx, vault-inbox-organizer, morning-briefing,
+suno-music-workflow, stock-value-screening
+
+## 변경 이력
+
+### 1.4.1 (2026-08-16)
+- `sermon-conceptnet`의 "1차라인" 정의 오류를 정정했다. 목사님이 지정하는 여섯 핵심어(1차라인)는 각 라인의 도착점(C6, 복음적 전환)이 아니라 **메인아이디어에 가장 가까운 출발점(C1)**이다 — 메인아이디어를 중심에 두고 여섯 라인이 방사형으로 뻗어나간다는 모델로 §4에 "방사형 배치와 1차라인" 절을 신설했다.
+- 같은 절에서 두 가지를 완화했다: ① 여섯 흐름 카테고리(일상경험·본문역설 등)는 병렬 발산의 기본값 예시일 뿐 강제 틀이 아니며, 라인마다 본문 순서를 따르는 즉시성이나 자유연상(의식의 흐름)처럼 다른 전개 방식을 써도 된다. ② 어휘 균형 원칙은 신학·인문학 계열을 정확히 50:50으로 맞추라는 뜻이 아니라 한쪽으로 쏠리지 않게 하는 허용 범위를 정한 것이다. 두 완화 모두 "구조화가 아니라 맥락화" 최상위 원칙의 구체적 적용이다.
+- `목회자-작업성향-프로파일.md`에 이번 정정을 사례 7로 추가하고, 아홉 번째 성향("규칙을 절대화하지 않는다 — 규칙 자체도 맥락화의 대상이다")을 종합에 반영했다.
+
+### 1.4.0 (2026-08-16)
+- 설교 준비 파이프라인 6개 스킬(`sermon-conceptnet`, `bible-text-exegesis`,
+  `theological-dialogue`, `sermon-lectionary`, `sermon-critic`, `bmf-sermon-table`)에
+  "작업 철학 — 구조화가 아니라 맥락화" 절을 공통으로 삽입했다. 표·단계·루브릭 같은 구조는
+  정리 도구일 뿐 목적이 아니며, 판단 기준은 연역(정답을 먼저 세우고 채우기)보다 귀납
+  (본문·맥락을 따라가다 스스로 드러나는 구조)이라는 원칙을 6개 스킬 전체의 최상위 기준으로
+  세웠다. 각 스킬에는 이 원칙을 그 스킬의 기존 규칙(예: sermon-lectionary의 부제 배치
+  원칙, sermon-critic의 현상학적 접근성 채점 항목)과 연결해 적었다.
+- 같은 6개 스킬에 "판단 루프" 절을 추가해, 규칙이 명시하지 않는 판단이 필요할 때
+  프로젝트 문서 `목회자-작업성향-프로파일.md`(목사님이 과거 개입·수정한 지점을 비교해
+  뽑은 문체·지향점·성향 기록)를 참조하도록 했다. 새로운 개입이 나오면 그 문서에 사례를
+  추가해, 다음 작업에 다시 반영되는 순환 구조를 만들었다.
+- `sermon-conceptnet`은 추가로: ①36개념망을 6개의 독립된 목록이 아니라 처음(증명)부터
+  끝(교회)까지 하나로 이어지는 라인으로 배열하는 "단일 라인 배열" 절차(다리 문장을
+  단어보다 먼저 설계, 5개 흐름 경계뿐 아니라 30개 흐름 내부 인접 쌍까지 전수 점검)를
+  신설했다. ②성경/신학 계열과 인문학적/문학적 계열 어휘를 의도적으로 섞는 "어휘 균형
+  원칙"을 추가했다. ③Breaking·Twisting 앞에 귀납적 확인 질문 "Asking"을 신설하고, 이
+  세 질문군(Asking·Breaking·Twisting)을 3대지 세 개념 각각에 반복해 총 27개 질문을
+  산출하도록 §7을 재구성했다(기존에는 설교 전체에 대해 3+3 한 번만 수행).
+
+### 1.2.0 (2026-08-08)
+- `sermon-critic` 개정: 수정 규모(표기/국소/구조/신규)에 따라 채점자·청중 서브에이전트의
+  모델(haiku/sonnet/opus)과 입력 범위를 자동 전환하는 규칙을 넣었다. 실측 로그에서
+  확인된 두 가지 낭비를 차단한다 — ①서브에이전트가 서브에이전트를 재귀 호출해 비용이
+  두 배로 든 사례 ②채점자가 청중 반응을 창작해 실제 청중 응답과 어긋난 사례.
+  자수 계측은 메인 에이전트가 수행하고 서브에이전트는 숫자만 넘겨받는다.
+- `sermon-lectionary/references/examples.md` 복구: 유실됐던 확립 사례·패턴 문서를
+  목사님이 별도 보관본에서 제공해 제자리에 되돌렸다. 4~5단계(개념망·무브 확정)에서
+  "패턴 참고 필요 시만" 읽는 선택적 파일이다.
+- 이 판본은 설치본 v1.1.0에서 원본 폴더를 복원해 재구성했다.
+
+## 알려진 미해결 사항
+- 구버전으로 보이는 중복 쌍이 남아 있다:
+  lecture-plan / lecture-plan-workflow, lecture-slides / lecture-slides-workflow,
+  research-topic / research-report-workflow.
+- 실물 없는 스킬을 참조하는 곳이 남아 있다: book-writing, write-essay,
+  write-course-intro, write-naver-info, bizplan-research 등.

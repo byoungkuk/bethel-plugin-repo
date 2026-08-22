@@ -1,0 +1,16 @@
+{
+  "name": "bethel-ministry",
+  "version": "1.6.1",
+  "description": "군선교사 김병국 목사(1사단 58포병대대 벧엘교회)의 사역·집필·강의 스킬 모음. 설교 파이프라인(석의-개념망-무브-채점), 교안·성찬·선교편지, 책쓰기, 강의 기획, 위키, 시각화 스킬을 포함한다.",
+  "author": {
+    "name": "김병국"
+  },
+  "keywords": [
+    "sermon",
+    "ministry",
+    "lectionary",
+    "writing",
+    "lecture",
+    "korean"
+  ]
+}
