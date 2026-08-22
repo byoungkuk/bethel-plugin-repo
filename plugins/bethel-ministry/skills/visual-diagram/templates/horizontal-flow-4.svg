@@ -1,6 +1,0 @@
-<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans KR, sans-serif"><rect width="1200" height="675" fill="#FFFFFF"/><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#333"/></marker></defs>
-<!-- 수평 플로우 4노드: x=90,350,610,870 / y=288 / 노드 220x100 -->
-<g fill="#2563EB"><rect x="90" y="288" width="220" height="100" rx="12"/><rect x="350" y="288" width="220" height="100" rx="12"/><rect x="610" y="288" width="220" height="100" rx="12"/><rect x="870" y="288" width="220" height="100" rx="12"/></g>
-<g stroke="#333" stroke-width="2" marker-end="url(#arrow)"><line x1="310" y1="338" x2="350" y2="338"/><line x1="570" y1="338" x2="610" y2="338"/><line x1="830" y1="338" x2="870" y2="338"/></g>
-<g fill="#FFFFFF" font-size="18" font-weight="700" text-anchor="middle"><text x="200" y="345">1단계</text><text x="460" y="345">2단계</text><text x="720" y="345">3단계</text><text x="980" y="345">4단계</text></g>
-</svg>

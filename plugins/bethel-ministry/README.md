@@ -1,6 +1,6 @@
 # 벧엘교회 사역 스킬 모음 (bethel-ministry)
 
-군선교사 김병국 목사(육군 1사단 58포병대대 벧엘교회)의 사역·집필·강의용 스킬 49개 묶음.
+군선교사 김병국 목사(육군 1사단 58포병대대 벧엘교회)의 설교 작성·평가 전용 스킬 9개 묶음.
 맥북·맥미니 등 여러 기기에서 동일한 스킬 환경을 쓰기 위해 하나로 묶은 플러그인.
 
 ## 설치
@@ -8,28 +8,22 @@
 
 ## 구성
 
-**설교 파이프라인** — sermon-lectionary(허브), bible-text-exegesis, sermon-conceptnet,
-sermon-critic, buttrick-homiletic, bmf-sermon-table, writer-voice, edit-writing-room
+**설교 파이프라인** — bible-text-exegesis → theological-dialogue → sermon-conceptnet →
+sermon-lectionary(허브) ↔ sermon-critic, buttrick-homiletic(방법론 진단), bmf-sermon-table(최종 도표)
 
-**예배·목회** — bible-study-worksheet, bible-reading-clip, communion-service,
-daily-lectionary-devotion, military-mission-letter, bilingual-subtitle
-
-**책쓰기** — book-planning, book-planning-novel, book-novel, book-novel-voice,
-book-writing-pro, book-editing, book-research, book-citation
-
-**강의** — lecture-plan, lecture-blueprint, lecture-research, lecture-slides,
-lecture-review, lecture-plan-workflow, lecture-slides-workflow
-
-**글쓰기** — write-content, write-blog, write-brunch, write-facebook
-
-**리서치·위키** — research-topic, research-mega-topic, research-report-workflow,
-wiki-ingest, wiki-activate, wiki-audit, wiki-research
-
-**시각화·기타** — visual-chart, visual-diagram, visual-infographic, visual-table,
-nanobanana-infographic-prompt, hwpx, vault-inbox-organizer, morning-briefing,
-suno-music-workflow, stock-value-screening
+**보조** — bible-study-worksheet(성경공부 교안), hwpx(bmf-sermon-table의 HWPX 템플릿 분석 의존성)
 
 ## 변경 이력
+
+### 1.7.0 (2026-08-22)
+- 실제 설교 작성·평가에 쓰이지 않는 스킬 42개를 제거했다(책쓰기·강의·리서치·위키·시각화·
+  일반 글쓰기·기타 도구 전 카테고리). 남긴 9개는 석의-신학대화-개념망-무브확정/채점-
+  방법론진단-도표화로 이어지는 설교 파이프라인 6개와, 여기 직접 의존하는 보조 스킬
+  2개(bible-study-worksheet, hwpx)뿐이다.
+- `writer-voice`, `edit-writing-room`은 이전 README에서 "설교 파이프라인"으로
+  분류돼 있었지만 실제로는 책 원고 등 범용 글쓰기 도구였으므로 함께 제거했다.
+- 아래 "알려진 미해결 사항"에 있던 중복 쌍·유령 참조 항목은 관련 스킬이 모두
+  제거되면서 더 이상 해당하지 않는다.
 
 ### 1.4.1 (2026-08-16)
 - `sermon-conceptnet`의 "1차라인" 정의 오류를 정정했다. 목사님이 지정하는 여섯 핵심어(1차라인)는 각 라인의 도착점(C6, 복음적 전환)이 아니라 **메인아이디어에 가장 가까운 출발점(C1)**이다 — 메인아이디어를 중심에 두고 여섯 라인이 방사형으로 뻗어나간다는 모델로 §4에 "방사형 배치와 1차라인" 절을 신설했다.
@@ -68,8 +62,4 @@ suno-music-workflow, stock-value-screening
 - 이 판본은 설치본 v1.1.0에서 원본 폴더를 복원해 재구성했다.
 
 ## 알려진 미해결 사항
-- 구버전으로 보이는 중복 쌍이 남아 있다:
-  lecture-plan / lecture-plan-workflow, lecture-slides / lecture-slides-workflow,
-  research-topic / research-report-workflow.
-- 실물 없는 스킬을 참조하는 곳이 남아 있다: book-writing, write-essay,
-  write-course-intro, write-naver-info, bizplan-research 등.
+(현재 없음 — 1.7.0에서 정리됨)
