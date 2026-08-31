@@ -15,6 +15,18 @@ sermon-lectionary(허브) ↔ sermon-critic, buttrick-homiletic(방법론 진단
 
 ## 변경 이력
 
+### 1.8.1 (2026-08-31)
+- 설교 파이프라인 스킬의 "판단 루프" 절이 참조하던 목사님 작업 성향 문서 경로를
+  프로젝트 문서 `claude/목회자-작업성향-프로파일.md`에서 볼트 파일
+  `40.설교/00.공통참조/목회자-작업성향-프로파일.md`로 옮겼다. 프로젝트에 매인 경로를
+  없애, 어느 Claude 프로젝트·폴더 스코프에서 세션을 열든 같은 파일을 참조하도록 했다.
+  경로 하드코딩을 막기 위해 `.obsidian/` 판정을 우선하라는 단서를 함께 달았다.
+- 대상: `bible-text-exegesis`, `theological-dialogue`, `sermon-conceptnet`(frontmatter·
+  본문·완료체크 3곳), `sermon-lectionary`(판단 루프·삽화 원칙 각주 2곳), `bmf-sermon-table`.
+  `sermon-critic`은 1.8.0 Gate 재설계 때 판단 루프 절이 빠져 대상이 아니다.
+- 참조 대상 파일(`목회자-작업성향-프로파일.md`, `theological-dialogue_SKILL_참고.md`)은
+  볼트 `40.설교/00.공통참조/`로 이관했다.
+
 ### 1.8.0 (2026-08-28)
 - `sermon-critic`을 4단계 Gate 파이프라인으로 재설계했다. Gate 0은 자수·이중 공백·
   이중피동 후보·연속 장문을 스크립트로 검사하고, Gate 1은 청중적합성을 제외한 9항목

@@ -8,7 +8,7 @@
     {
       "name": "bethel-ministry",
       "source": "./plugins/bethel-ministry",
-      "version": "1.8.0",
+      "version": "1.8.1",
       "description": "군선교사 김병국 목사(1사단 58포병대대 벧엘교회)의 설교 작성·평가 전용 스킬 모음. 설교 파이프라인(석의-신학대화-개념망-무브확정/채점-방법론진단-도표화)과 그 직접 의존 스킬(성경공부 교안, HWPX)만 포함한다.",
       "author": {
         "name": "김병국"
